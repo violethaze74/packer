@@ -77,7 +77,6 @@ import (
 	dockerpushpostprocessor "github.com/hashicorp/packer/post-processor/docker-push"
 	dockersavepostprocessor "github.com/hashicorp/packer/post-processor/docker-save"
 	dockertagpostprocessor "github.com/hashicorp/packer/post-processor/docker-tag"
-	exoscaleimportpostprocessor "github.com/hashicorp/packer/post-processor/exoscale-import"
 	googlecomputeexportpostprocessor "github.com/hashicorp/packer/post-processor/googlecompute-export"
 	googlecomputeimportpostprocessor "github.com/hashicorp/packer/post-processor/googlecompute-import"
 	manifestpostprocessor "github.com/hashicorp/packer/post-processor/manifest"
@@ -200,7 +199,6 @@ var PostProcessors = map[string]packersdk.PostProcessor{
 	"docker-push":          new(dockerpushpostprocessor.PostProcessor),
 	"docker-save":          new(dockersavepostprocessor.PostProcessor),
 	"docker-tag":           new(dockertagpostprocessor.PostProcessor),
-	"exoscale-import":      new(exoscaleimportpostprocessor.PostProcessor),
 	"googlecompute-export": new(googlecomputeexportpostprocessor.PostProcessor),
 	"googlecompute-import": new(googlecomputeimportpostprocessor.PostProcessor),
 	"manifest":             new(manifestpostprocessor.PostProcessor),
