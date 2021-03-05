@@ -1113,10 +1113,6 @@
         "path": "post-processors/docker-tag"
       },
       {
-        "title": "Exoscale Import",
-        "path": "post-processors/exoscale-import"
-      },
-      {
         "title": "Google Compute Export",
         "path": "post-processors/googlecompute-export"
       },
