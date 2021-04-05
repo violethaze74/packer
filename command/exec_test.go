@@ -95,6 +95,8 @@ func TestHelperProcess(*testing.T) {
 		os.Exit((&BuildCommand{Meta: commandMeta()}).Run(args))
 	case "hcl2_upgrade":
 		os.Exit((&HCL2UpgradeCommand{Meta: commandMeta()}).Run(args))
+	case "version":
+		os.Exit((&VersionCommand{Meta: commandMeta()}).Run(args))
 	default:
 		fmt.Fprintf(os.Stderr, "Unknown command %q\n", cmd)
 		os.Exit(2)
