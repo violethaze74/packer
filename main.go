@@ -470,3 +470,5 @@ func init() {
 	// Seed the random number generator
 	rand.Seed(time.Now().UTC().UnixNano())
 }
+
+var backgroundCheckFn func(int) (bool, error)

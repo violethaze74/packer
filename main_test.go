@@ -2,6 +2,7 @@ package main
 
 import (
 	"math/rand"
+	"os"
 	"reflect"
 	"strings"
 	"testing"
@@ -66,4 +67,12 @@ func TestRandom(t *testing.T) {
 	if rand.Intn(9999999) == 8498210 {
 		t.Fatal("math.rand is not seeded properly")
 	}
+}
+
+func ExampleWrappedMain() {
+	os.Setenv("PACKER_WRAP_COOKIE", "49C22B1A-3A93-4C98-97FA-E07D18C787B5")
+	backgroundCheckFn = func(_ int) (bool, error) { return true, nil }
+	os.Args = []string{"packer", "version"}
+	wrappedMain()
+	//Output: Packer v1.7.2-dev
 }
