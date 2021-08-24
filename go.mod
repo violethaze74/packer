@@ -1,6 +1,7 @@
 module github.com/hashicorp/packer
 
 require (
+	github.com/StackExchange/wmi v1.2.1 // indirect
 	github.com/biogo/hts v0.0.0-20160420073057-50da7d4131a3
 	github.com/cheggaaa/pb v1.0.27
 	github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e
@@ -48,7 +49,7 @@ require (
 	github.com/hashicorp/packer-plugin-puppet v1.0.0
 	github.com/hashicorp/packer-plugin-qemu v1.0.0
 	github.com/hashicorp/packer-plugin-scaleway v1.0.1
-	github.com/hashicorp/packer-plugin-sdk v0.2.3
+	github.com/hashicorp/packer-plugin-sdk v0.2.4-0.20210824193240-6b55f55dd41b
 	github.com/hashicorp/packer-plugin-tencentcloud v1.0.1
 	github.com/hashicorp/packer-plugin-triton v1.0.0
 	github.com/hashicorp/packer-plugin-ucloud v1.0.0
