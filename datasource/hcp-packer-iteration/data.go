@@ -118,6 +118,5 @@ func (d *Datasource) Execute() (cty.Value, error) {
 		UpdatedAt:          iteration.UpdatedAt.String(),
 	}
 
-	log.Printf("Megan output is %#v", output)
 	return hcl2helper.HCL2ValueFromConfig(output, d.OutputSpec()), nil
 }

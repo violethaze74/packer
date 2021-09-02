@@ -61,9 +61,9 @@ type FlatDatasourceOutput struct {
 	BuildID       *string `mapstructure:"build_id" cty:"build_id" hcl:"build_id"`
 	IterationID   *string `mapstructure:"iteration_id" cty:"iteration_id" hcl:"iteration_id"`
 	PackerRunUUID *string `mapstructure:"packer_run_uuid" cty:"packer_run_uuid" hcl:"packer_run_uuid"`
-	ID            *string `mapstructure:"id,omitempty" cty:"id" hcl:"id"`
-	ImageID       *string `mapstructure:"image_id,omitempty" cty:"image_id" hcl:"image_id"`
-	Region        *string `mapstructure:"region,omitempty" cty:"region" hcl:"region"`
+	ID            *string `mapstructure:"id" cty:"id" hcl:"id"`
+	ImageID       *string `mapstructure:"image_id" cty:"image_id" hcl:"image_id"`
+	Region        *string `mapstructure:"region" cty:"region" hcl:"region"`
 }
 
 // FlatMapstructure returns a new FlatDatasourceOutput.

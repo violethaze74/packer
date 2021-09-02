@@ -97,13 +97,13 @@ type DatasourceOutput struct {
 	// The iteration id. This is a ULID, which is a unique identifier similar
 	// to a UUID. It is created by the HCP Packer Registry when an iteration is
 	// first created, and is unique to this iteration.
-	ID string `mapstructure:"id,omitempty"`
+	ID string `mapstructure:"id"`
 	// ID or URL of the remote cloud image as given by a build.
-	ImageID string `mapstructure:"image_id,omitempty"`
+	ImageID string `mapstructure:"image_id"`
 	// The cloud region as given by `packer build`. eg. "ap-east-1".
 	// For locally managed clouds, this may map instead to a cluster, server
 	// or datastore.
-	Region string `mapstructure:"region,omitempty"`
+	Region string `mapstructure:"region"`
 }
 
 func (d *Datasource) OutputSpec() hcldec.ObjectSpec {
@@ -128,7 +128,7 @@ func (d *Datasource) Execute() (cty.Value, error) {
 	output := DatasourceOutput{}
 
 	for _, build := range iteration.Builds {
-		if build.CloudProvider != d.config.CloudProvider {
+		if build.CloudProvider == d.config.CloudProvider {
 			for _, image := range build.Images {
 				if image.Region == d.config.Region {
 					// This is the desired image.
