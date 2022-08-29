@@ -19,7 +19,7 @@
     "@hashicorp/react-head": "^3.1.1",
     "@hashicorp/react-inline-svg": "^6.0.2",
     "@hashicorp/react-markdown-page": "1.4.2",
-    "@hashicorp/react-product-downloads-page": "2.4.0",
+    "@hashicorp/react-product-downloads-page": "2.9.0",
     "@hashicorp/react-product-features-list": "^4.1.2",
     "@hashicorp/react-search": "5.1.2",
     "@hashicorp/react-section-header": "^5.0.3",
