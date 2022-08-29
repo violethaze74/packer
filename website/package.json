@@ -24,7 +24,7 @@
     "@hashicorp/react-search": "5.1.2",
     "@hashicorp/react-section-header": "^5.0.3",
     "@hashicorp/react-subnav": "^8.4.0",
-    "@hashicorp/react-text-split-with-image": "^4.2.2",
+    "@hashicorp/react-text-split-with-image": "^4.3.1",
     "@hashicorp/react-vertical-text-block-list": "^6.0.3",
     "adm-zip": "^0.5.5",
     "gray-matter": "^4.0.2",
