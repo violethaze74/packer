@@ -117,7 +117,7 @@ require (
 	github.com/ulikunitz/xz v0.5.10
 	github.com/vmware/govmomi v0.26.1 // indirect
 	github.com/yandex-cloud/go-sdk v0.0.0-20210824141121-182aedd44a25 // indirect
-	github.com/zclconf/go-cty v1.9.1
+	github.com/zclconf/go-cty v1.12.1
 	github.com/zclconf/go-cty-yaml v1.0.1
 	golang.org/x/crypto v0.0.0-20210817164053-32db794688a5 // indirect
 	golang.org/x/mobile v0.0.0-20210901025245-1fde1d6c3ca1 // indirect
